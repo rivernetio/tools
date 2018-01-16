@@ -33,7 +33,6 @@ wget https://raw.githubusercontent.com/rivernetio/rpm/master/1.7.5/kubernetes-cn
 wget https://raw.githubusercontent.com/rivernetio/rpm/master/1.7.5/socat-1.7.3.2-2.el7.x86_64.rpm	
 wget https://raw.githubusercontent.com/rivernetio/rpm/master/1.7.5/yum-plugin-versionlock-1.1.31-42.el7.noarch.rpm	
 cd ..
-tar zcvf ./ecp-rpm.tar.gz ./ecp-rpm/*.rpm 
 
 #  Download docker rpm
 mkdir ./docker
@@ -44,7 +43,6 @@ wget https://mirrors.aliyun.com/docker-engine/yum/repo/main/centos/7/Packages/do
 wget https://mirrors.aliyun.com/docker-engine/yum/repo/main/centos/7/Packages/docker-engine-selinux-1.12.6-1.el7.centos.noarch.rpm
 wget https://mirrors.aliyun.com/docker-engine/yum/repo/main/centos/7/Packages/docker-engine-selinux-1.12.6-1.el7.centos.src.rpm
 cd ..
-tar zcvf ./docker.tar.gz ./docker/*.rpm
 echo "RPM packages downloaded successfully."
 
 #  Download ansible rpm
@@ -52,7 +50,6 @@ mkdir ./ansible
 cd ./ansible
 wget https://raw.githubusercontent.com/rivernetio/rpm/master/ansible/ansible-2.4.2.0-1.el7.noarch.rpm
 cd ..
-tar zcvf ./ansible.tar.gz ./ansible/*.rpm
 echo "RPM packages downloaded successfully."
 
 ###############################################
@@ -67,7 +64,6 @@ wget https://github.com/rivernetio/charts/raw/master/repo/stable/tensorflow-serv
 wget https://github.com/rivernetio/charts/raw/master/repo/stable/tensorflow-1.0.0.tgz
 wget https://github.com/rivernetio/charts/raw/master/repo/stable/mnist-demo-0.1.0.tgz
 cd ..
-tar zcvf ./ecp-charts.tar.gz ./ecp-charts/*
 echo "ECP Charts downloaded successfully."
 
 
@@ -233,5 +229,6 @@ function create_x86_64_package() {
 
 create_x86_64_package
 echo "x86_64 offline package created successfully."
+
 
 
