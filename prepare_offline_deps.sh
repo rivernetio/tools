@@ -111,7 +111,9 @@ CLUSTER_IMAGES=(
 	docker.io/rivernet/tiller:v2.6.2
 	docker.io/rivernet/helm:v2.2.3
 	docker.io/rivernet/canes:4.1
-	docker.io/rivernet/elasticsearch:1.5.2
+	docker.io/rivernet/elasticsearch:5.6.4
+	docker.io/rivernet/kibana:5.6.4
+	docker.io/rivernet/docker-elasticsearch-curator:5.4.1
 	docker.io/rivernet/fluentd-elasticsearch:v2.0.2
 	docker.io/rivernet/events:4.1
 	docker.io/rivernet/license:4.1
