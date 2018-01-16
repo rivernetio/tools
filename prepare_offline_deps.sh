@@ -63,7 +63,7 @@ mkdir ./ecp-charts
 cd ./ecp-charts
 wget https://github.com/rivernetio/charts/raw/master/repo/stable/index.yaml
 wget https://github.com/rivernetio/charts/raw/master/repo/stable/jupyter-1.0.0.tgz
-wget https://github.com/rivernetio/charts/raw/master/repo/stable/serving-1.0.0.tgz
+wget https://github.com/rivernetio/charts/raw/master/repo/stable/tensorflow-serving-1.0.0.tgz
 wget https://github.com/rivernetio/charts/raw/master/repo/stable/tensorflow-1.0.0.tgz
 wget https://github.com/rivernetio/charts/raw/master/repo/stable/mnist-demo-0.1.0.tgz
 cd ..
@@ -155,7 +155,7 @@ APP_IMAGES=(
 	docker.io/rivernet/mnist-demo:4.1
 )
 
-GLUATER_IMAGES=(
+GLUSTER_IMAGES=(
 	docker.io/rivernet/gluster-centos:latest
 	docker.io/rivernet/heketi:dev
 )
