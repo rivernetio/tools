@@ -37,18 +37,52 @@ cd ..
 #  Download docker rpm
 mkdir ./docker
 cd ./docker
-wget https://mirrors.aliyun.com/docker-engine/yum/repo/main/centos/7/Packages/docker-engine-1.12.6-1.el7.centos.src.rpm
-wget https://mirrors.aliyun.com/docker-engine/yum/repo/main/centos/7/Packages/docker-engine-1.12.6-1.el7.centos.x86_64.rpm
-wget https://mirrors.aliyun.com/docker-engine/yum/repo/main/centos/7/Packages/docker-engine-debuginfo-1.12.6-1.el7.centos.x86_64.rpm
-wget https://mirrors.aliyun.com/docker-engine/yum/repo/main/centos/7/Packages/docker-engine-selinux-1.12.6-1.el7.centos.noarch.rpm
-wget https://mirrors.aliyun.com/docker-engine/yum/repo/main/centos/7/Packages/docker-engine-selinux-1.12.6-1.el7.centos.src.rpm
+wget https://raw.githubusercontent.com/rivernetio/rpm/master/docker/audit-libs-python-2.7.6-3.el7.x86_64.rpm
+wget https://raw.githubusercontent.com/rivernetio/rpm/master/docker/checkpolicy-2.5-4.el7.x86_64.rpm
+wget https://raw.githubusercontent.com/rivernetio/rpm/master/docker/container-selinux-2.33-1.git86f33cd.el7.noarch.rpm
+wget https://raw.githubusercontent.com/rivernetio/rpm/master/docker/container-storage-setup-0.8.0-3.git1d27ecf.el7.noarch.rpm
+wget https://raw.githubusercontent.com/rivernetio/rpm/master/docker/docker-1.12.6-68.gitec8512b.el7.centos.x86_64.rpm
+wget https://raw.githubusercontent.com/rivernetio/rpm/master/docker/docker-client-1.12.6-68.gitec8512b.el7.centos.x86_64.rpm
+wget https://raw.githubusercontent.com/rivernetio/rpm/master/docker/docker-common-1.12.6-68.gitec8512b.el7.centos.x86_64.rpm
+wget https://raw.githubusercontent.com/rivernetio/rpm/master/docker/libcgroup-0.41-13.el7.x86_64.rpm
+wget https://raw.githubusercontent.com/rivernetio/rpm/master/docker/libsemanage-python-2.5-8.el7.x86_64.rpm
+wget https://raw.githubusercontent.com/rivernetio/rpm/master/docker/oci-register-machine-0-3.13.gitcd1e331.el7.x86_64.rpm
+wget https://raw.githubusercontent.com/rivernetio/rpm/master/docker/oci-systemd-hook-0.1.14-1.git1ba44c6.el7.x86_64.rpm
+wget https://raw.githubusercontent.com/rivernetio/rpm/master/docker/oci-umount-2.3.0-1.git51e7c50.el7.x86_64.rpm
+wget https://raw.githubusercontent.com/rivernetio/rpm/master/docker/policycoreutils-python-2.5-17.1.el7.x86_64.rpm
+wget https://raw.githubusercontent.com/rivernetio/rpm/master/docker/python-IPy-0.75-6.el7.noarch.rpm
+wget https://raw.githubusercontent.com/rivernetio/rpm/master/docker/setools-libs-3.3.8-1.1.el7.x86_64.rpm
+wget https://raw.githubusercontent.com/rivernetio/rpm/master/docker/skopeo-containers-0.1.26-2.dev.git2e8377a.el7.centos.x86_64.rpm
+wget https://raw.githubusercontent.com/rivernetio/rpm/master/docker/yajl-2.0.4-4.el7.x86_64.rpm
 cd ..
 echo "RPM packages downloaded successfully."
 
 #  Download ansible rpm
 mkdir ./ansible
 cd ./ansible
-wget https://raw.githubusercontent.com/rivernetio/rpm/master/ansible/ansible-2.4.2.0-1.el7.noarch.rpm
+wget https://raw.githubusercontent.com/rivernetio/rpm/master/ansible/PyYAML-3.10-11.el7.x86_64.rpm
+wget https://raw.githubusercontent.com/rivernetio/rpm/master/ansible/ansible-2.4.1.0-1.el7.noarch.rpm
+wget https://raw.githubusercontent.com/rivernetio/rpm/master/ansible/libyaml-0.1.4-11.el7_0.x86_64.rpm
+wget https://raw.githubusercontent.com/rivernetio/rpm/master/ansible/python-babel-0.9.6-8.el7.noarch.rpm
+wget https://raw.githubusercontent.com/rivernetio/rpm/master/ansible/python-backports-1.0-8.el7.x86_64.rpm
+wget https://raw.githubusercontent.com/rivernetio/rpm/master/ansible/python-backports-ssl_match_hostname-3.4.0.2-4.el7.noarch.rpm
+wget https://raw.githubusercontent.com/rivernetio/rpm/master/ansible/python-cffi-1.6.0-5.el7.x86_64.rpm
+wget https://raw.githubusercontent.com/rivernetio/rpm/master/ansible/python-enum34-1.0.4-1.el7.noarch.rpm
+wget https://raw.githubusercontent.com/rivernetio/rpm/master/ansible/python-httplib2-0.9.2-1.el7.noarch.rpm
+wget https://raw.githubusercontent.com/rivernetio/rpm/master/ansible/python-idna-2.4-1.el7.noarch.rpm
+wget https://raw.githubusercontent.com/rivernetio/rpm/master/ansible/python-ipaddress-1.0.16-2.el7.noarch.rpm
+wget https://raw.githubusercontent.com/rivernetio/rpm/master/ansible/python-jinja2-2.7.2-2.el7.noarch.rpm
+wget https://raw.githubusercontent.com/rivernetio/rpm/master/ansible/python-markupsafe-0.11-10.el7.x86_64.rpm
+wget https://raw.githubusercontent.com/rivernetio/rpm/master/ansible/python-paramiko-2.1.1-2.el7.noarch.rpm
+wget https://raw.githubusercontent.com/rivernetio/rpm/master/ansible/python-passlib-1.6.5-2.el7.noarch.rpm
+wget https://raw.githubusercontent.com/rivernetio/rpm/master/ansible/python-ply-3.4-11.el7.noarch.rpm
+wget https://raw.githubusercontent.com/rivernetio/rpm/master/ansible/python-pycparser-2.14-1.el7.noarch.rpm
+wget https://raw.githubusercontent.com/rivernetio/rpm/master/ansible/python-setuptools-0.9.8-7.el7.noarch.rpm
+wget https://raw.githubusercontent.com/rivernetio/rpm/master/ansible/python-six-1.9.0-2.el7.noarch.rpm
+wget https://raw.githubusercontent.com/rivernetio/rpm/master/ansible/python2-cryptography-1.7.2-1.el7_4.1.x86_64.rpm
+wget https://raw.githubusercontent.com/rivernetio/rpm/master/ansible/python2-jmespath-0.9.0-3.el7.noarch.rpm
+wget https://raw.githubusercontent.com/rivernetio/rpm/master/ansible/python2-pyasn1-0.1.9-7.el7.noarch.rpm
+wget https://raw.githubusercontent.com/rivernetio/rpm/master/ansible/sshpass-1.06-2.el7.x86_64.rpm
 cd ..
 echo "RPM packages downloaded successfully."
 
