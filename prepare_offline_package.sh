@@ -2,6 +2,8 @@
 
 # export SITE=Toronto
 
+branch=$1
+
 git --version > /dev/null 2>&1
 if [ $? -ne 0 ]; then
   echo "You must install git and make sure to have connection to the internet"
@@ -9,8 +11,15 @@ if [ $? -ne 0 ]; then
 fi
 
 echo "Cloning ansible-ecp repository ..."
+
+if [ "$branch" =  "" ]; then
+  branch="master"
+fi
+
 if [ ! -d `pwd`/"ansible-ecp" ]; then
-  git clone https://github.com/rivernetio/ansible-ecp
+  echo "Branch $branch"
+  git clone -b $branch https://github.com/rivernetio/ansible-ecp
+    
   if [ $? -ne 0 ]; then
     echo "Failed to clone the ansible-ecp repository"
     exit 1
