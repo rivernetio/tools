@@ -19,7 +19,8 @@ service docker start
    ```
    cd tools
    chmod +x prepare_offline_package.sh
-   ./prepare_offline_package.sh
+   // 可以指定branch(master, ecp-4.1),默认为master
+   ./prepare_offline_package.sh BRANCH_NAME
    ```
 
    在当前目录下产生 ```ansible-ecp.tar.gz```
